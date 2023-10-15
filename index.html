@@ -4,63 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ChaseCraft Universe Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file (styles.css) -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-  <!-- Space-themed Background and Portfolio -->
-<div id="space">
-  <img src="assets/IMG_6701.webp" alt="Space Background Image">
-</div>
 <body>
-  <!-- Navigation Section -->
   <nav>
-    <!-- ... your navigation code ... -->
+    <a href="#space">Space</a>
+    <a href="#game1">Game 1</a>
+    <a href="#game2">Game 2</a>
+    <a href="#game3">Game 3</a>
+    <a href="#quiz">Quiz</a>
   </nav>
-  <!-- ... other HTML sections ... -->
 
-  <!-- Space-themed Background and Portfolio -->
-  <div id="space"></div>
+  <div id="space">
+    <img src="assets/IMG_6701.webp" alt="Space Background Image">
+  </div>
+
   <div class="portfolio">
     <h1>ChaseCraft Universe Portfolio</h1>
-    <!-- Game 1 Section -->
-    <div class="portfolio-item">
+
+    <div class="portfolio-item" id="game1">
       <h3>Game 1: Space Chase</h3>
       <p>Space Chase is an intergalactic adventure where you navigate through wormholes and defeat cosmic threats.</p>
     </div>
 
-    <!-- Game 2 Section -->
-    <div class="portfolio-item">
+    <div class="portfolio-item" id="game2">
       <h3>Game 2: Stellar Odyssey</h3>
       <p>Stellar Odyssey is a space exploration game with stunning visuals and an expansive galaxy to conquer.</p>
     </div>
 
-    <!-- Game 3 Section -->
-    <div class="portfolio-item">
+    <div class="portfolio-item" id="game3">
       <h3>Game 3: Nebula Quest</h3>
       <p>Nebula Quest is a journey through surreal nebulae, solving mysteries and unlocking the secrets of the universe.</p>
     </div>
-  </div>
 
-  <!-- Interactive Quiz Section -->
-  <div class="portfolio-item" id="quiz">
-    <h3>Game Quiz: Test Your Knowledge</h3>
-    <p>Challenge your knowledge of ChaseCraft Universe games with this interactive quiz!</p>
-    <button onclick="startQuiz()">Start Quiz</button>
-    <div id="quiz-container" style="display: none;">
-      <p id="question">Question 1: What is the objective of Space Chase?</p>
-      <label>
-        <input type="radio" name="answer" value="a">a) Collecting stars
-      </label>
-      <label>
-        <input type="radio" name="answer" value="b">b) Defeating cosmic threats
-      </label>
-      <label>
-        <input type="radio" name="answer" value="c">c) Racing through space
-      </label>
-      <button onclick="checkAnswer()">Submit Answer</button>
-      <p id="result"></p>
+    <div class="portfolio-item" id="quiz">
+      <h3>Game Quiz: Test Your Knowledge</h3>
+      <p>Challenge your knowledge of ChaseCraft Universe games with this interactive quiz!</p>
+      <button class="start-button" onclick="startQuiz()">Start Quiz</button>
+      <div id="quiz-container" style="display: none;">
+        <p id="question">Question 1: What is the objective of Space Chase?</p>
+        <div id="answer-buttons"></div>
+      </div>
     </div>
   </div>
 
-  <script src="script.js"></script> <!-- Link to the JavaScript file (script.js) -->
+  <script src="script.js"></script>
 </body>
 </html>
